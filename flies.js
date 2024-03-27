@@ -8,8 +8,8 @@ class Firefly {
     this.a = map(sin(this.t), -1, 1, 0, 1);
     this.dF = random(1000);
     this.facing = map(noise(this.dF), 0, 1, -TAU, TAU);
-    this.size = random(0.2, 0.5);
-    this.speed = random(0.1, 0.3) * this.size * 4;
+    this.size = random(0.1, 0.7);
+    this.speed = random(0.07, 0.2) * this.size * 4;
   }
 
   update() {
